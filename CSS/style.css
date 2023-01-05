@@ -41,6 +41,22 @@ section:nth-child(2) {
     margin: 0 auto;
 }
 
+@media screen and (max-width: 440px) {
+    body {
+        max-height: 100vh;
+        overflow: auto;
+        width: 40vh;
+    }
+    
+}
+
+@media screen and (max-width: 440px) {
+    section:nth-child(1),
+    section:nth-child(2) {
+        padding: 14px;
+    }
+}
+
 /* ---- Content Title - Left ----- */
 
 .content-title .about-title,
@@ -585,7 +601,6 @@ header {
 .contact-container p:nth-child(2) {
     text-align: center;
     padding: 0 15rem 1rem;
-    margin: 0 5rem;
 }
 
 .form-container {
