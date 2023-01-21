@@ -155,7 +155,7 @@ header {
     .header-container {
         background: url("../images/background.png") center center no-repeat;
         background-size: 121% 100%;
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
     }
     .header-menu h1 { 
         font-size: 35px;
@@ -323,10 +323,6 @@ header {
 @media screen and (max-width: 440px) {
     .nav-menu {
         justify-content: center;
-    }
-    #navbar a:focus {
-        outline: none;
-        box-shadow: none;
     }
 }
 
