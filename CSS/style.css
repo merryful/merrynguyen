@@ -155,7 +155,6 @@ header {
     .header-container {
         background: url("../images/background.png") center center no-repeat;
         background-size: 121% 100%;
-        
     }
     .header-menu h1 { 
         font-size: 35px;
@@ -170,7 +169,6 @@ header {
         width: 95%;
         height: 10rem;
     }
-    
 }
 
 /* -------Header Animation----- */
@@ -652,7 +650,7 @@ header {
     border: 2px solid var(--lavender);
     border-radius: 0.5rem;
     font-family: inherit;
-    font-size: inherit;
+    font-size: 0.9rem;
     color: inherit;
     outline: none;
     padding: 1.25rem;
