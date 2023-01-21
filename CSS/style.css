@@ -155,8 +155,7 @@ header {
     .header-container {
         background: url("../images/background.png") center center no-repeat;
         background-size: 121% 100%;
-        width: 0;
-        height: 0;
+        
     }
     .header-menu h1 { 
         font-size: 35px;
@@ -167,6 +166,11 @@ header {
     .header-menu-container .header-contents {
         margin: 10px 0;
     }
+    .header-menu-container {
+        width: 95%;
+        height: 10rem;
+    }
+    
 }
 
 /* -------Header Animation----- */
