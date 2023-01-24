@@ -18,6 +18,7 @@ a {
 
 main {
     height: 100%;
+    background-color: white;
 }
 
 
@@ -45,7 +46,7 @@ section:nth-child(2) {
     body {
         max-height: 100vh;
         overflow: auto;
-        width: 53vh;
+        width: 63vh;
     }
     
 }
@@ -103,13 +104,12 @@ header {
 
 .header-container {
     background: url("../images/background.png") center center no-repeat;
-    background-size: cover;
-    display: flex;
-    min-height: 100%;
-    justify-content: center;
-    align-items: center;
+    background-size: 140% 140%;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
     animation: easeIn 2s;
-    background-attachment: fixed;
 }
 
 @keyframes easeIn {
@@ -128,7 +128,9 @@ header {
     width: 500px;
     height: 170px;
     border-radius: 4px;
-    box-shadow: 0 0 5px rgb(0 0 0 / 40%);
+    box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+    margin: 0 auto;
+    transform: translateY(290%);
 }
 
 .header-menu-container .header-contents {
@@ -153,10 +155,7 @@ header {
 
 @media screen and (max-width: 440px) {
     .header-container {
-        background: url("../images/background.png") center center no-repeat;
-        background-size: 121% 100%;
-        background-attachment: fixed;
-        background-size: 200% 100%;
+        width: 100%;
     }
     .header-menu h1 { 
         font-size: 35px;
@@ -168,10 +167,21 @@ header {
         margin: 10px 0;
     }
     .header-menu-container {
-        width: 95%;
+        display: flex;
+        justify-content: center;
+        width: 85%;
         height: 10rem;
+        transform: translateY(250%);
     }
 }
+
+@media screen and (max-height: 800px) {
+    .header-menu-container {
+        transform: translateY(160%);
+    }
+
+}
+
 
 /* -------Header Animation----- */
 
@@ -251,6 +261,7 @@ header {
     filter: drop-shadow(1px 1px 1px rgb(181, 181, 181));
     font-size: 14px;
     transition: all .3s ease-in-out;
+    z-index: 2;
 }
 
 #navbar a {
@@ -272,6 +283,14 @@ header {
     background: var(--pink);
     opacity: 0.6;
     animation: border 0.5s forwards;
+}
+
+#navbar.no-hover a:hover {
+    color: black;
+}
+#navbar.no-hover a:hover::after {
+    background: none;
+    animation: none;
 }
 
 .nav-menu {
@@ -357,6 +376,10 @@ header {
     display: flex;
     padding: 50px;
     margin-bottom: 30px;
+}
+
+.about-image {
+    z-index: 1;
 }
 
 .about-image img {
@@ -518,8 +541,6 @@ header {
     box-shadow: 0 0 2px rgb(0 0 0 / 40%);
     position: relative;
     background-color: rgba(0, 0, 0, 0.9);
-    z-index: -1;
-    
 }
 
 .work-img {
@@ -747,6 +768,7 @@ footer {
 
 .message-box {
     font-family: 'Nothing You Could Do', cursive;
+    text-align: center;
 }
 
 .back-btn {
@@ -764,4 +786,10 @@ footer {
 
 .back-btn i {
     margin-right: 1rem;
+}
+
+@media screen and (max-width: 400px) {
+    .ty-container {
+        white-space: inherit;
+    }
 }
