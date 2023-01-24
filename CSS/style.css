@@ -155,7 +155,8 @@ header {
     .header-container {
         background: url("../images/background.png") center center no-repeat;
         background-size: 121% 100%;
-        /* background-attachment: fixed; */
+        background-attachment: fixed;
+        background-size: 200% 100%;
     }
     .header-menu h1 { 
         font-size: 35px;
