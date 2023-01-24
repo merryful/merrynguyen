@@ -731,3 +731,36 @@ footer {
     padding: 15px;
     text-align: center;
 }
+
+/* ------- Thank You page ------ */
+
+.ty-container {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    margin: 3rem;
+    gap: 3rem;
+    align-items: center;
+    color: var(--pink);
+}
+
+.message-box {
+    font-family: 'Nothing You Could Do', cursive;
+}
+
+.back-btn {
+    padding: 0.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    background: none;
+    color: rgb(113 113 113);
+}
+
+.back-btn:hover {
+    color: rgb(129 173 216);
+}
+
+.back-btn i {
+    margin-right: 1rem;
+}
