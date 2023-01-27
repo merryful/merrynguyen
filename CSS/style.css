@@ -364,7 +364,136 @@ header {
         display: flex;
         justify-content: end;
     }
+
+    ----------
+
+    #navbar {
+        height: 100%;
+        background-color: #56d4e1;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        left: 0;
+        align-items: flex-start;
+        top: 75px;
+        padding: 100px 0 0 70px;
+        font-size: x-large;
+    }
+
+    #navbar a {
+        color: white;
+    }
+
+
+
 } */
+
+
+div#icon2 span {
+    display: block;
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background: #000;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+div#icon2 {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    margin: 50px auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#icon2 span:nth-child(even) {
+  left: 50%;
+  border-radius: 50%;
+}
+
+#icon2 span:nth-child(odd) {
+  left:0px;
+  border-radius: 50%;
+}
+#icon2 span:nth-child(1), #icon2 span:nth-child(2), #icon2 span:nth-child(3) {
+  top: 0px;
+}
+#icon2 span:nth-child(4), #icon2 span:nth-child(5), #icon2 span:nth-child(6) {
+  top: 20px;
+}
+#icon2 span:nth-child(7), #icon2 span:nth-child(8), #icon2 span:nth-child(9) {
+  top: 40px;
+}
+#icon2 span:nth-child(3) {
+    left: 100%;
+}
+
+#icon2 span:nth-child(6) {
+    left: 100%;
+}
+
+#icon2 span:nth-child(9) {
+    left: 100%;
+}
+#icon2.open span:nth-child(1) {
+  width: 45px;
+  transform: rotate(45deg);
+  left: -9px;
+  border-radius: 50px;
+  top: 5px;
+}
+#icon2.open span:nth-child(3) {
+    width: 45px;
+    transform: rotate(-45deg);
+    border-radius: 50px;
+    left: 45%;
+    top: 5px;
+
+}
+#icon2.open span:nth-child(7) {
+  width: 45px;
+  transform: rotate(-45deg);
+  left: -9px;
+  border-radius: 50px;
+  top: 35px;
+}
+#icon2.open span:nth-child(9) {
+  width: 45px;
+  transform: rotate(45deg);
+  border-radius: 50px;
+  left: 45%;
+  top: 35px;
+}
+ #icon2.open span:nth-child(2) {
+  top: 20px;
+}
+
+#icon2.open span:nth-child(5) {
+  left: 50%;
+}
+#icon2.open span:nth-child(6) {
+  left: 50%;
+}
+
+#icon2.open span:nth-child(8) {
+  top: 20px;
+}
 
 /* -------- Section 1 - About Me -------- */
 
@@ -529,7 +658,7 @@ header {
 
 .work-wrapper {
     display: grid;
-    margin: 30px 0 30px 0;
+    padding: 50px 0;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     gap: 15px;
@@ -538,7 +667,7 @@ header {
 
 .card {
     display: flex;
-    box-shadow: 0 0 2px rgb(0 0 0 / 40%);
+    box-shadow: 2px 2px 7px rgb(169 169 169 / 60%);
     position: relative;
     background-color: rgba(0, 0, 0, 0.9);
 }
@@ -550,12 +679,29 @@ header {
 }
 
 .work-details {
-    margin: 75px 10px;
+    margin-top: 3rem;
     transition: .5s ease;
     position: absolute;
     opacity: 0;
     text-align: center;
     color: white;
+}
+
+.work-details p:nth-child(4) {
+    margin-top: 2rem;
+}
+
+.work-details a {
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 3px;
+    background-color: #2BC4D5;
+    color: white;
+}
+
+.work-details a:hover {
+    background-color: white;
+    color: #2BC4D5;
 }
 
 .box-1:hover .work-img,
@@ -569,7 +715,6 @@ header {
 .box-2:hover .work-details,
 .box-3:hover .work-details{
     opacity: 1;
-    cursor: pointer;
 }
 
 .work-img img {
@@ -579,7 +724,7 @@ header {
 }
 
 .work-details>* {
-    margin: 5px;
+    margin: 1rem;
 }
 
 .work-tools {
@@ -591,7 +736,7 @@ header {
 
 @media screen and (max-width: 991px) {
     .work-wrapper {
-        padding: 80px 15px;
+        padding: 50px 15px;
     }
 }
 

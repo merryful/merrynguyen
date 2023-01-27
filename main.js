@@ -27,7 +27,15 @@ window.addEventListener('scroll', function(e) {
         body.classList.remove("hide");
     }
 
-})
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var icon2 = document.getElementById("icon2");
+    icon2.addEventListener("click", function() {
+        this.classList.toggle("open");
+    });
+});
 
 
 
