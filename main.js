@@ -4,14 +4,6 @@ const navbar = document.getElementById("navbar");
 const body = document.body;
 var sticky = navbar.offsetTop;
 
-const checkScreenSize = () => {
-    if (window.innerWidth < 768) {
-      document.getElementById("navbar").classList.add("no-hover");
-    } else {
-      document.getElementById("navbar").classList.remove("no-hover");
-    }
-  };
-
 window.addEventListener('resize', checkScreenSize);
 
 window.addEventListener('scroll', function(e) {
