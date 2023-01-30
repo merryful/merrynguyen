@@ -509,6 +509,10 @@ div#icon2 {
 
 .about-image {
     z-index: 1;
+    background-color: #e6e0f0;
+    transform: translate(-22px, 12px);
+    border-radius: 95% 87% 95% 3% / 4% 94% 3% 95%;
+    height: 100%;
 }
 
 .about-image img {
@@ -522,6 +526,7 @@ div#icon2 {
     position: relative;
     display: inline-block;
     z-index: -1;
+    transform: translate(16px, -14px);
 }
 
 .image-container::before {
@@ -538,7 +543,7 @@ div#icon2 {
 
 .aboutMe-text {
     display: block;
-    padding: 10px 0 0 50px;
+    padding-left: 50px;
 }
 
 .aboutMe-text img {
@@ -614,7 +619,8 @@ div#icon2 {
     .about-wrapper {
         padding: 60px 15px;
         flex-direction: column;
-        gap: 15px;
+        gap: 40px;
+        align-items: center;
     }
 
     .about-image {
@@ -673,12 +679,14 @@ div#icon2 {
 }
 
 .work-img {
+    width: 100%;
     opacity: 1;
     transition: .5s ease;
     backface-visibility: hidden;
 }
 
 .work-details {
+    width: 100%;
     margin-top: 3rem;
     transition: .5s ease;
     position: absolute;
@@ -737,6 +745,24 @@ div#icon2 {
 @media screen and (max-width: 991px) {
     .work-wrapper {
         padding: 50px 15px;
+    }
+    .work-details {
+        margin-top: 1rem;
+    }
+    .work-tools {
+        gap: 8px;
+    }
+    .work-details>* {
+        margin-top: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .work-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .work-details {
+        margin-top: 3rem;
     }
 }
 
