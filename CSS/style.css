@@ -99,8 +99,8 @@ section:nth-child(2) {
 
 header {
     height: 100vh;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    place-items: center;
 }
 
 .header-container {
