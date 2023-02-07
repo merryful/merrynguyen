@@ -170,15 +170,7 @@ header {
         justify-content: center;
         width: 85%;
         height: 10rem;
-        transform: translateY(250%);
     }
-}
-
-@media screen and (max-height: 800px) {
-    .header-menu-container {
-        transform: translateY(160%);
-    }
-
 }
 
 /* -------Header Animation----- */
