@@ -239,8 +239,9 @@ header {
 }
 
 .header-menu a:hover {
-    color: var(--pink);
-    transition: 0.3s;
+    background: -webkit-linear-gradient(214deg, rgba(33,176,215,1) 0%, rgba(212,126,179,1) 61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /*---------- NavBar----------- */
@@ -551,6 +552,19 @@ div#icon2 {
     margin: 0 auto;
     margin-bottom: 8px;
 }
+
+.aboutMe-text h2 {
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .1em; 
+    animation: typing 3.5s steps(40, end)
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
 
 .aboutMe-toolkit h1,
 .aboutMe-text h2 {
@@ -947,7 +961,12 @@ footer {
 }
 
 .back-btn i {
-    margin-right: 1rem;
+    margin-right: 0.5rem;
+    transition: all 0.5s ease-out;
+}
+
+.back-btn span:hover > i {
+    transform: translateX(-0.5rem);
 }
 
 @media screen and (max-width: 400px) {
