@@ -853,7 +853,7 @@ div#icon2 {
     color: inherit;
     outline: none;
     padding: 1.25rem;
-    background: none;
+    background: rgb(249 249 255);
     /* Change border when input focus*/
   }
 
@@ -873,7 +873,8 @@ div#icon2 {
     color: var(--lavender);
     pointer-events: none;
     transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
-    background-color: #EEFBFC;
+    
+    background-color: rgb(249 249 255);
   }
 
 .form_input:focus ~ .form_label,
@@ -882,6 +883,7 @@ div#icon2 {
     top: -0.5rem;
     font-size: 0.8rem;
     left: 0.8rem;
+    background-color: #EEFBFC;
 }
 
 .contact-container button {
